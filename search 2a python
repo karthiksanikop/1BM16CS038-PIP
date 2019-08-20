@@ -1,0 +1,19 @@
+def search(lis,a):
+	print(lis)
+	if a in lis:
+		return True
+	else:
+		return False
+lis=[]
+print("enter the numbers")
+while True:
+    a=int(input())
+    if a!=-1:
+        lis.append(a)
+    else:
+        break
+b=int(input("enter search element"))
+if search(lis,b):
+    print("key found")
+else:
+    print("key not found")
